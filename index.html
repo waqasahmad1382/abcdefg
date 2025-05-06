@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Anum!</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Countdown Screen -->
+  <div id="countdown-container">
+    <h1>🎉 Countdown to Surprise 🎉</h1>
+    <h2 id="countdown">10</h2>
+  </div>
+
+  <!-- Main Celebration Section -->
+  <div id="main-content" style="display:none">
+    <!-- Fireworks Canvas -->
+    <canvas id="fireworks-canvas"></canvas>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button id="toggle-lights">Turn Lights On</button>
+      <button id="toggle-music">💖 Toggle Music</button>
+    </div>
+
+    <!-- Balloons -->
+    <div id="balloons-container"></div>
+
+    <!-- 3D Cube -->
+    <div class="cube-container">
+      <div class="cube">
+        <img src="anum1.jpg" class="face front" />
+        <img src="anum2.jpg" class="face back" />
+        <img src="anum3.jpg" class="face right" />
+        <img src="anum4.jpg" class="face left" />
+        <img src="anum5.jpg" class="face top" />
+        <img src="anum6.jpg" class="face bottom" />
+      </div>
+    </div>
+
+    <!-- Flip Photos -->
+    <div class="flip-gallery">
+      <div class="flip-card"><img src="anum7.jpg" /></div>
+      <div class="flip-card"><img src="anum8.jpg" /></div>
+      <div class="flip-card"><img src="anum9.jpg" /></div>
+      <div class="flip-card"><img src="anum10.jpg" /></div>
+    </div>
+
+    <!-- Cake Cutting -->
+    <div id="cake-section">
+      <img id="cake" src="cake.png" alt="Birthday Cake" />
+      <button id="cut-cake">Cut the Cake 🎂</button>
+    </div>
+
+    <!-- Final Message -->
+    <div id="final-message-section" style="display:none">
+      <h2>To My Dearest Anum 💖</h2>
+      <p>Wishing you the happiest birthday filled with love, laughter, and all your dreams coming true. You mean the world to me!</p>
+    </div>
+
+    <button id="final-message-button">Click for a Surprise Message ✨</button>
+  </div>
+
+  <audio id="bg-music" loop>
+    <source src="romantic.mp3" type="audio/mp3" />
+  </audio>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
